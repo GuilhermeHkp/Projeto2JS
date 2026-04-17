@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Acadêmico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h2>Gestão Acadêmica</h2>
+        </header>
+
+        <section class="form-section">
+            <div class="input-row">
+                <input type="text" id="nome" placeholder="Nome do aluno">
+                <input type="number" id="notaUm" placeholder="Nota 1">
+                <input type="number" id="notaDois" placeholder="Nota 2">
+            </div>
+            <button id="btnCadastrarAluno" class="btn-main">Cadastrar Aluno</button>
+            
+            <div class="actions-row">
+                <button id="btnfiltrarMedia" class="btn-outline">Filtrar Médias</button>
+                <button id="btnfiltrarCinco" class="btn-outline">Top 5 Alunos</button>
+            </div>
+        </section>
+
+        <main class="results-grid">
+            <div class="column">
+                <h3>Lista de Alunos</h3>
+                <div id="saida" class="scrollable-content">Nenhum registro...</div>
+            </div>
+            
+            <div class="column">
+                <h3>Destaques</h3>
+                <div id="alunos10" class="scrollable-content">Aguardando filtro...</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
