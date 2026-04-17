@@ -3,7 +3,6 @@ let alunosNota10 = [];
 document.getElementById("btnCadastrarAluno").addEventListener("click", cadastrarAlunos);
 document.getElementById("btnfiltrarMedia").addEventListener("click", filtrarMedia);
 document.getElementById("btnfiltrarCinco").addEventListener("click", filtrarCinco);
-document.getElementById("btnfiltrarNome").addEventListener("click", filtrarNome);
 
 function cadastrarAlunos(){
     let nome = document.getElementById("nome").value;
